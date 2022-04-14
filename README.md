@@ -1,24 +1,29 @@
-# golden-gaze: a Pipeline for Reducing Misinformation in Search
+# golden-gaze: a Pipeline for Reducing Health Misinformation in Search
 
-This is the code repository for the paper: Dake Zhang, Amir Vakili Tahami, Mustafa Abualsaud, and Mark D. Smucker. "Learning Trustworthy Web Sources to Derive Correct Answers and Reduce Health Misinformation in Search." In Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval. 2022.
+This is the code repository for the paper: 
+Dake Zhang, Amir Vakili Tahami, Mustafa Abualsaud, and Mark D. Smucker. 
+"Learning Trustworthy Web Sources to Derive Correct Answers and Reduce Health Misinformation in Search." 
+In Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval. 2022.
+[Link to be updated]
 
-To be finished ...
+## Data
+
+
 
 ## Citation
 Please cite the following paper if you use our code.
 ```
-@INPROCEEDINGS{zhang2022trustworthy,
-   author = "Jimmy Lin and Xueguang Ma and Sheng-Chieh Lin and Jheng-Hong Yang and Ronak Pradeep and Rodrigo Nogueira",
-   title = "{Pyserini}: A {Python} Toolkit for Reproducible Information Retrieval Research with Sparse and Dense Representations",
-   booktitle = "Proceedings of the 44th Annual International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR 2021)",
-   year = 2021,
-   pages = "2356--2362",
+@inproceedings{zhang2022trustworthy,
+  title={Learning Trustworthy Web Sources to Derive Correct Answers and Reduce Health Misinformation in Search},
+  author={Zhang, Dake and Vakili Tahami, Amir and Abualsaud, Mustafa and Smucker, Mark D.},
+  booktitle={Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval},
+  year={2022}
 }
 ```
 
 ## Acknowledgement
-
+This work was supported in part by the Natural Sciences and Engineering Research Council of Canada (RGPIN-04665-2020, RGPAS-00080-2020), in part by Mitacs, in part by Compute Canada, and in part by the University of Waterloo.
 
 ## Contact
-
-If you have questions regarding this repository, please contact Dake using https://zhangdake.com.cn/#contact.
+If you have questions regarding this repository, 
+please contact Dake using https://zhangdake.com.cn/#contact.
