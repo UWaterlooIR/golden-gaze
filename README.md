@@ -8,6 +8,15 @@ In Proceedings of the 45th International ACM SIGIR Conference on Research and De
 
 ## Data
 
+This pipeline was evaluated on the [TREC Health Misinformation Track](https://trec-health-misinfo.github.io/).
+The data used in our paper is hosted on the [TREC](https://trec.nist.gov/) website.
+
+Download those file listed below and put them in the folder `./data/raw_data/`.
+
+1. `misinfo-2021-topics.xml`: https://trec.nist.gov/data/misinfo/misinfo-2021-topics.xml
+2. `qrels-35topics.txt`: https://trec.nist.gov/data/misinfo/misinfo-resources-2021.tar.gz (`/qrels/qrels-35topics.txt`)
+
+## Environment
 
 
 ## Citation
