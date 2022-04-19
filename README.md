@@ -9,14 +9,34 @@ In Proceedings of the 45th International ACM SIGIR Conference on Research and De
 ## Data
 
 This pipeline was evaluated on the [TREC Health Misinformation Track](https://trec-health-misinfo.github.io/).
-The data used in our paper is hosted on the [TREC](https://trec.nist.gov/) website.
+The topics and qrels used in our paper are hosted on the [TREC](https://trec.nist.gov/) website.
+We also used two web collections: [ClueWeb12-B13](https://lemurproject.org/clueweb12/) and en.noclean version of [C4](https://www.tensorflow.org/datasets/catalog/c4).
 
 Download those file listed below and put them in the folder `./data/raw_data/`.
 
-1. `misinfo-2021-topics.xml`: https://trec.nist.gov/data/misinfo/misinfo-2021-topics.xml
-2. `qrels-35topics.txt`: located at `/qrels/qrels-35topics.txt` within https://trec.nist.gov/data/misinfo/misinfo-resources-2021.tar.gz
+1. 2019 Topics `2019topics.xml`: https://trec.nist.gov/data/misinfo/2019topics.xml
+2. 2019 Topics Efficacy Labels `2019topics_efficacy.txt`: https://trec.nist.gov/data/misinfo/2019topics_efficacy.txt
+3. 2021 Topics `misinfo-2021-topics.xml`: https://trec.nist.gov/data/misinfo/misinfo-2021-topics.xml
+4. 2021 qrels `qrels-35topics.txt`: located at `/qrels/qrels-35topics.txt` within https://trec.nist.gov/data/misinfo/misinfo-resources-2021.tar.gz
 
 ## Environment
+We use Python 3.8.10 with the following main packages.
+```
+beautifulsoup4==4.9.3
+nltk==3.5
+pyserini==0.13.0
+pytorch-lightning==1.5.8
+scikit-learn==0.24.2
+torch==1.9.0
+transformers==4.6.1
+```
+
+
+## Experiment
+In this section, we provide a step-by-step guidance to reproduce the results reported in our paper.
+We have provided all code in this repository.
+Meanwhile, we have also provided intermediate results between stages.
+In other words, you can quickly experiment with any stage without the need to run previous stages to get the input data to that stage.
 
 
 ## Citation
