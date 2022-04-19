@@ -3,5 +3,5 @@
 # IntelliJ Files
 .idea/
 # Not Included Intentionally
-./data/raw_data/
+data/raw_data/
 *.sh
