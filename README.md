@@ -14,7 +14,7 @@ The data used in our paper is hosted on the [TREC](https://trec.nist.gov/) websi
 Download those file listed below and put them in the folder `./data/raw_data/`.
 
 1. `misinfo-2021-topics.xml`: https://trec.nist.gov/data/misinfo/misinfo-2021-topics.xml
-2. `qrels-35topics.txt`: https://trec.nist.gov/data/misinfo/misinfo-resources-2021.tar.gz (`/qrels/qrels-35topics.txt`)
+2. `qrels-35topics.txt`: located at `/qrels/qrels-35topics.txt` within https://trec.nist.gov/data/misinfo/misinfo-resources-2021.tar.gz
 
 ## Environment
 

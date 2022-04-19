@@ -2,3 +2,6 @@
 .DS_Store
 # IntelliJ Files
 .idea/
+# Not Included Intentionally
+./external_data/raw_data/
+*.sh
