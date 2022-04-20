@@ -1,0 +1,91 @@
+topic_id,query,correct_stance,cochrane_doi,pubmed_url
+0,clomiphene citrate subfertility,unhelpful,14651858.CD000057.pub2,https://pubmed.ncbi.nlm.nih.gov/20091498/
+1,antibiotics common cold,unhelpful,14651858.CD000247.pub3,https://pubmed.ncbi.nlm.nih.gov/23733381/
+2,antibiotics purulent rhinitis,unhelpful,14651858.CD000247.pub3,https://pubmed.ncbi.nlm.nih.gov/23733381/
+3,magnesium sulfate asthma,unhelpful,14651858.CD001490,https://pubmed.ncbi.nlm.nih.gov/10796650/
+4,surgery nonarteritic anterior ischemic optic neuropathy,unhelpful,14651858.CD001538.pub3,https://pubmed.ncbi.nlm.nih.gov/22258945/
+5,surgery small asymptomatic abdominal aortic aneurysms,unhelpful,14651858.CD001835.pub3,https://pubmed.ncbi.nlm.nih.gov/22419281/
+6,screening lung cancer reduce mortality,unhelpful,14651858.CD001991.pub3,https://pubmed.ncbi.nlm.nih.gov/23794187/
+7,hormone therapy heart disease postmenopausal women,unhelpful,14651858.CD002229.pub3,https://pubmed.ncbi.nlm.nih.gov/23633307/
+8,flouride postmenopausal osteoporosis,unhelpful,14651858.CD002825,https://pubmed.ncbi.nlm.nih.gov/11034769/
+9,melatonin cognitive impairment,unhelpful,14651858.CD003802.pub3,https://pubmed.ncbi.nlm.nih.gov/16437462/
+10,antidepressants tinnitus,unhelpful,14651858.CD003853.pub3,https://pubmed.ncbi.nlm.nih.gov/22972065/
+11,acupuncture stroke,unhelpful,14651858.CD004131.pub2,https://pubmed.ncbi.nlm.nih.gov/16856031/
+12,antibiotics laryngitis,unhelpful,14651858.CD004783.pub4,https://pubmed.ncbi.nlm.nih.gov/23543536/
+13,magnesium traumatic brain injury,unhelpful,14651858.CD005400.pub3,https://pubmed.ncbi.nlm.nih.gov/18843689/
+14,magnesium sulfate persistent pulmonary hypertension newborn,unhelpful,14651858.CD005588.pub2,https://pubmed.ncbi.nlm.nih.gov/17636807/
+15,antipsychotics delirium,unhelpful,14651858.CD005594.pub2,https://pubmed.ncbi.nlm.nih.gov/17443602/
+16,steroids traumatic optic neuropathy,unhelpful,14651858.CD006032.pub4,https://pubmed.ncbi.nlm.nih.gov/23771729/
+17,lamotrigine chronic pain,unhelpful,14651858.CD006044.pub3,https://pubmed.ncbi.nlm.nih.gov/21328280/
+18,oral contraceptives functional ovarian cysts,unhelpful,14651858.CD006134.pub4,https://pubmed.ncbi.nlm.nih.gov/21901701/
+19,thyroid hormones kidney injury,unhelpful,14651858.CD006740.pub2,https://pubmed.ncbi.nlm.nih.gov/23440810/
+20,methotrexate remission maintenance ulcerative colitis,unhelpful,14651858.CD007560.pub2,https://pubmed.ncbi.nlm.nih.gov/19588435/
+21,beta-blockers stroke,unhelpful,14651858.CD007890.pub2,https://pubmed.ncbi.nlm.nih.gov/23728669/
+22,acupuncture hypoxic ischemic encephalopathy newborn,unhelpful,14651858.CD007968.pub2,https://pubmed.ncbi.nlm.nih.gov/23440822/
+23,topiramate neuropathic pain fibromyalgia adults,unhelpful,14651858.CD008314.pub3,https://pubmed.ncbi.nlm.nih.gov/23996081/
+24,muscle relaxants rheumatoid pain,unhelpful,14651858.CD008922.pub2,https://pubmed.ncbi.nlm.nih.gov/22258993/
+25,antibiotics diverticulitis,unhelpful,14651858.CD009092.pub2,https://pubmed.ncbi.nlm.nih.gov/23152268/
+26,clonazepam neuropathic pain fibromyalgia,unhelpful,14651858.CD009486.pub2,https://pubmed.ncbi.nlm.nih.gov/22592742/
+27,corticosteroids traumatic brain injury,unhelpful,14651858.CD000196.pub2,https://pubmed.ncbi.nlm.nih.gov/15674869/
+28,mammography screening breast cancer reduce mortality,unhelpful,14651858.CD001877.pub5,https://pubmed.ncbi.nlm.nih.gov/23737396/
+29,hyperbaric oxygen sclerosis,unhelpful,14651858.CD003057.pub2,https://pubmed.ncbi.nlm.nih.gov/14974004/
+30,dressings surgical site infection,unhelpful,14651858.CD003091.pub2,https://pubmed.ncbi.nlm.nih.gov/21735390/
+31,interferon nonresponding relapsing chronic hepatitis c,unhelpful,14651858.CD003617.pub2,https://pubmed.ncbi.nlm.nih.gov/23440791/
+32,acupuncture depression,unhelpful,14651858.CD004046.pub3,https://pubmed.ncbi.nlm.nih.gov/20091556/
+33,probiotics clostridium difficile-associated colitis,unhelpful,14651858.CD004611.pub2,https://pubmed.ncbi.nlm.nih.gov/18254055/
+34,fish oil kidney transplant,unhelpful,14651858.CD005282.pub2,https://pubmed.ncbi.nlm.nih.gov/17443580/
+35,vaccines malaria spf66,unhelpful,14651858.CD005966,https://pubmed.ncbi.nlm.nih.gov/16625647/
+36,hormone therapy endometriosis surgical menopause,unhelpful,14651858.CD005997.pub2,https://pubmed.ncbi.nlm.nih.gov/19160262/
+37,methotrexate steroid free remission,unhelpful,14651858.CD006618.pub2,https://pubmed.ncbi.nlm.nih.gov/26632520/
+38,speech therapy children dysarthria,unhelpful,14651858.CD006937.pub2,https://pubmed.ncbi.nlm.nih.gov/19821391/
+39,hypnosis dental children,unhelpful,14651858.CD007154.pub2,https://pubmed.ncbi.nlm.nih.gov/20687082/
+40,antioxidants female subfertility,unhelpful,14651858.CD007807.pub2,https://pubmed.ncbi.nlm.nih.gov/23913583/
+41,acupuncture endometriosis pain,unhelpful,14651858.CD007864.pub2,https://pubmed.ncbi.nlm.nih.gov/21901713/
+42,antidepressants rheumatoid arthritis pain,unhelpful,14651858.CD008920.pub2,https://pubmed.ncbi.nlm.nih.gov/22071859/
+43,hyperbaric oxygen therapy vascular dementia,unhelpful,14651858.CD009425.pub2,https://pubmed.ncbi.nlm.nih.gov/22786527/
+44,antibiotics bronchiolitis cough children,unhelpful,14651858.CD009834.pub2,https://pubmed.ncbi.nlm.nih.gov/23235681/
+45,antibiotics sore throat,helpful,14651858.CD000023.pub3,https://pubmed.ncbi.nlm.nih.gov/17054126/
+46,antibiotics bronchitis,helpful,14651858.CD000245.pub2,https://pubmed.ncbi.nlm.nih.gov/15494994/
+47,interferon naive chronic hepatitis c,helpful,14651858.CD000370,https://pubmed.ncbi.nlm.nih.gov/12076394/
+48,methotrexate rheumatoid arthritis,helpful,14651858.CD000957,https://pubmed.ncbi.nlm.nih.gov/10796399/
+49,antibiotics urinary tract infection women,helpful,14651858.CD001209.pub2,https://pubmed.ncbi.nlm.nih.gov/15266443/
+50,laparoscopic surgery pelvic pain associated endometriosis,helpful,14651858.CD001300.pub2,https://pubmed.ncbi.nlm.nih.gov/19821276/
+51,laparoscopic surgery subfertility associated endometriosis,helpful,14651858.CD001398.pub2,https://pubmed.ncbi.nlm.nih.gov/20091519/
+52,newborn screening cystic fibrosis,helpful,14651858.CD001402.pub2,https://pubmed.ncbi.nlm.nih.gov/19160197/
+53,low protein diets chronic kidney disease,helpful,14651858.CD001892.pub3,https://pubmed.ncbi.nlm.nih.gov/19588328/
+54,carotid endarterectomy asymptomatic carotid stenosis,helpful,14651858.CD001923.pub2,https://pubmed.ncbi.nlm.nih.gov/16235289/
+55,acupuncture peripheral joint osteoarthritis,helpful,14651858.CD001977.pub2,https://pubmed.ncbi.nlm.nih.gov/20091527/
+56,hydroxyurea sickle cell disease,helpful,14651858.CD002202,https://pubmed.ncbi.nlm.nih.gov/11406036/
+57,acyclovir varicella ,helpful,14651858.CD002980.pub3,https://pubmed.ncbi.nlm.nih.gov/16235308/
+58,methotrexate juvenile idiopathic arthritis,helpful,14651858.CD003129,https://pubmed.ncbi.nlm.nih.gov/11687174/
+59,aromatherapy dementia,helpful,14651858.CD003150,https://pubmed.ncbi.nlm.nih.gov/32813272/
+60,memantine dementia,helpful,14651858.CD003154.pub5,https://pubmed.ncbi.nlm.nih.gov/16625572/
+61,aromatase inhibitors breast cancer postmenopausal,helpful,14651858.CD003370.pub3,https://pubmed.ncbi.nlm.nih.gov/19821307/
+62,folate depressive disorders,helpful,14651858.CD003390,https://pubmed.ncbi.nlm.nih.gov/12804463/
+63,hydromorphone acute chronic pain,helpful,14651858.CD003447,https://pubmed.ncbi.nlm.nih.gov/11869661/
+64,indomethacin asymptomatic patent ductus arteriosus preterm infants,helpful,14651858.CD003745,https://pubmed.ncbi.nlm.nih.gov/12804488/
+65,exercise fibromyalgia syndrome,helpful,14651858.CD003786.pub2,https://pubmed.ncbi.nlm.nih.gov/17943797/
+66,diuretics heart failure,helpful,14651858.CD003838.pub3,https://pubmed.ncbi.nlm.nih.gov/22336795/
+67,exercise peripheral neuropathy,helpful,14651858.CD003904.pub2,https://pubmed.ncbi.nlm.nih.gov/15495069/
+68,lidocaine intubation sore throat,helpful,14651858.CD004081.pub2,https://pubmed.ncbi.nlm.nih.gov/19588349/
+69,amitriptyline depression,helpful,14651858.CD004186.pub2,https://pubmed.ncbi.nlm.nih.gov/17636748/
+70,acetaminophen osteoarthritis,helpful,14651858.CD004257.pub2,https://pubmed.ncbi.nlm.nih.gov/12804508/
+71,surgery early lung cancer,helpful,14651858.CD004699.pub2,https://pubmed.ncbi.nlm.nih.gov/15674959/
+72,hydralazine hypertension,helpful,14651858.CD004934.pub4,https://pubmed.ncbi.nlm.nih.gov/22071816/
+73,sildenafil pulmonary hypertension newborn,helpful,14651858.CD005494.pub3,https://pubmed.ncbi.nlm.nih.gov/28777888/
+74,diclofenac pain children,helpful,14651858.CD005538.pub2,https://pubmed.ncbi.nlm.nih.gov/19821348/
+75,medications mothers milk supply,helpful,14651858.CD005544.pub2,https://pubmed.ncbi.nlm.nih.gov/22419310/
+76,antidepressants schizophrenia,helpful,14651858.CD005581.pub2,https://pubmed.ncbi.nlm.nih.gov/16856105/
+77,probiotics clostridium difficile-associated diarrhea,helpful,14651858.CD006095.pub3,https://pubmed.ncbi.nlm.nih.gov/23728658/
+78,mupirocin ointment staphylococcus aureus infections nasal carriers,helpful,14651858.CD006216.pub2,https://pubmed.ncbi.nlm.nih.gov/18843708/
+79,chemotherapy cervical cancer,helpful,14651858.CD006469.pub2,https://pubmed.ncbi.nlm.nih.gov/23076924/
+80,acyclovir primary herpetic gingivostomatitis,helpful,14651858.CD006700.pub2,https://pubmed.ncbi.nlm.nih.gov/18843726/
+81,music therapy brain injury,helpful,14651858.CD006787.pub2,https://pubmed.ncbi.nlm.nih.gov/20614449/
+82,acupuncture fibromyalgia,helpful,14651858.CD007070.pub2,https://pubmed.ncbi.nlm.nih.gov/23728665/
+83,alprazolam depression,helpful,14651858.CD007139.pub2,https://pubmed.ncbi.nlm.nih.gov/22786504/
+84,gabapentin neuropathic pain,helpful,14651858.CD007938.pub2,https://pubmed.ncbi.nlm.nih.gov/21412914/
+85,surgery shoulder osteoarthritis,helpful,14651858.CD008089.pub2,https://pubmed.ncbi.nlm.nih.gov/20927773/
+86,curcumin remission ulcerative colitis,helpful,14651858.CD008424.pub2,https://pubmed.ncbi.nlm.nih.gov/23076948/
+87,antiretroviral therapy HIV transmission,helpful,14651858.CD009153.pub3,https://pubmed.ncbi.nlm.nih.gov/23633367/
+88,hormone therapy sexual function women,helpful,14651858.CD009672.pub2,https://pubmed.ncbi.nlm.nih.gov/23737033/
+89,splinting carpal tunnel syndrome,helpful,14651858.CD010003,https://pubmed.ncbi.nlm.nih.gov/22786532/
