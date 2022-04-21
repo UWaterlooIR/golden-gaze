@@ -15,10 +15,10 @@ We also used two web collections: [ClueWeb12-B13](https://lemurproject.org/cluew
 
 Download those file listed below and put them in the folder `data/raw_data/`.
 
-1. 2019 Topics `2019topics.xml`: https://trec.nist.gov/data/misinfo/2019topics.xml
-2. 2019 Topics Efficacy Labels `2019topics_efficacy.txt`: https://trec.nist.gov/data/misinfo/2019topics_efficacy.txt
+1. 2019 topics `2019topics.xml`: https://trec.nist.gov/data/misinfo/2019topics.xml
+2. 2019 topics efficacy labels `2019topics_efficacy.txt`: https://trec.nist.gov/data/misinfo/2019topics_efficacy.txt
 3. 2019 qrels `2019qrels_raw.txt`: https://trec.nist.gov/data/misinfo/2019qrels_raw.txt
-4. 2021 Topics `misinfo-2021-topics.xml`: https://trec.nist.gov/data/misinfo/misinfo-2021-topics.xml
+4. 2021 topics `misinfo-2021-topics.xml`: https://trec.nist.gov/data/misinfo/misinfo-2021-topics.xml
 5. 2021 qrels `qrels-35topics.txt`: located at `qrels/qrels-35topics.txt` within https://trec.nist.gov/data/misinfo/misinfo-resources-2021.tar.gz
 
 ## Environment
@@ -40,7 +40,32 @@ We have provided all code in this repository.
 Meanwhile, we have also provided intermediate outputs after each stage.
 In other words, you can quickly experiment with any stage without the need to run previous stages to get the input data to that stage.
 
+### Stage 0: Data Preparation
+
+
 ### Stage 1: Initial Retrieval
+
+`bm25_search.py` uses [Pyserini](https://github.com/castorini/pyserini) to perform BM25 search.
+For the initial retrieval, we need to perform BM25 search using 2019 topics, 2021 topics, and WH topics respectively.
+For 2019 topcis and 2021 topics, we need to retrieve the top 3000 documents for both topic answer prediction and reranking.
+For WH topics, we only need the top 100 documents for training the Trust Model.
+
+`bm25_search.py` options:
+
+- -T, --topic_set, options: 2019, 2021, WH
+- -t, --topic_id, 1-51 for 2019 topics, 101-150 for 2021 topics, and 0-89 for WH topics. Specify the topic id for each run of this program to make jobs parallel.
+- -i, --index_path, path to the index of the web collection. You can index C4/ClueWeb12-B13 using [Anserini](https://github.com/castorini/anserini).
+
+Execute the following command to obtain the Initial Retrieval Results.
+Make sure you have the index of C4 ready.
+
+```bash
+python bm25_search.py -t [topic_id] -T 2019 -i [path to the index of C4]
+python bm25_search.py -t [topic_id] -T 2021 -i [path to the index of C4]
+python bm25_search.py -t [topic_id] -T WH -i [path to the index of C4]
+```
+
+The retrieved documents would be saved in the corresponding folder within `output`.
 
 ### Stage 2: Stance Detection
 
