@@ -66,6 +66,7 @@ python bm25_search.py -t [topic_id] -T WH -i [path to the index of C4]
 ```
 
 The retrieved documents would be saved in the corresponding folder within `output`.
+We have the compressed output folder ready for you to use if you want to save time from running the code: https://github.com/UWaterlooIR/golden-gaze/releases/download/data/output.zip.
 
 ### Stage 2: Stance Detection
 
