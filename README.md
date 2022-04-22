@@ -93,6 +93,3 @@ This work was supported in part by the Natural Sciences and Engineering Research
 ## Contact
 If you have questions regarding this repository, 
 please contact Dake using https://zhangdake.com.cn/#contact.
-=======
-# golden-gaze
->>>>>>> 7468a4c (Initial commit)
