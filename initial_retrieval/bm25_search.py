@@ -39,6 +39,8 @@ elif args.topic_set == 'WH':
     k = 100  # Only the top 100 documents are needed
     topics = pd.read_csv('../data/WH_topics.csv')
     topics['description'] = 'none'
+else:
+    raise ValueError('[ERROR] Invalid parameter "topic_set".')
 
 
 # Specify the topic
