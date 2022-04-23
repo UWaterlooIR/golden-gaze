@@ -70,6 +70,15 @@ Execute the following command to sample a balanced subset of 2019 qrels.
 python 2019qrels_sampler.py
 ```
 
+The output file is provided at `data/2019qrels_docs_balanced.csv`.
+
+For the experiment of five-fold cross-validation of the 2019 data below, execute the following code to get the stratified random topic split.
+
+```bash
+python 2019topics_random_split.py
+```
+
+The output file is provided at `data/2019topics_split.json`.
 
 ### Stage 1: Initial Retrieval
 
@@ -100,11 +109,23 @@ We have the compressed output folder ready for you to use if you want to save ti
 
 ### Stage 2: Stance Detection
 
+Code for this stage is kept under `stance_detection/`.
+
+Our Stance Detection Model is based on [t5-large](https://huggingface.co/t5-large) finetuning on the stance judgments sampled from 2019 qrels.
+
+
+
 ### Stage 3: Answer Prediction
+
+Code for this stage is kept under `answer_prediction/`.
 
 ### Stage 4: Reranking
 
+Code for this stage is kept under `reranking/`.
+
 ### Stage 5: Evaluation
+
+Code for this stage is kept under `evaluation/`.
 
 
 ## Citation
