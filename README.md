@@ -119,7 +119,7 @@ Please cite the following paper if you use our code.
 ```
 
 ## Acknowledgement
-This work was supported in part by the Natural Sciences and Engineering Research Council of Canada (RGPIN-04665-2020, RGPAS-00080-2020), in part by Mitacs, in part by Compute Canada, and in part by the University of Waterloo.
+This work was supported in part by the Natural Sciences and Engineering Research Council of Canada (RGPIN-2020-04665, RGPAS-2020-00080), in part by Mitacs, in part by Compute Canada, and in part by the University of Waterloo.
 
 ## Contact
 If you have questions regarding this repository, 
