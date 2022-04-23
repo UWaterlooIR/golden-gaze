@@ -21,6 +21,10 @@ Download those file listed below and put them in the folder `data/raw_data/`.
 4. 2021 topics `misinfo-2021-topics.xml`: https://trec.nist.gov/data/misinfo/misinfo-2021-topics.xml
 5. 2021 qrels `qrels-35topics.txt`: located at `qrels/qrels-35topics.txt` within https://trec.nist.gov/data/misinfo/misinfo-resources-2021.tar.gz
 
+Refer to the links below for how documents were judged by NIST.
+1. 2019 qrels: https://trec.nist.gov/data/misinfo2019.html
+2. 2021 qrels: https://trec.nist.gov/data/misinfo2021.html
+
 ## Environment
 We use Python 3.8.10 with the following main packages.
 ```
@@ -42,8 +46,20 @@ In other words, you can quickly experiment with any stage without the need to ru
 
 ### Stage 0: Data Preparation
 
+Code for this stage is kept under `utils/`.
+
+To train the Stance Detection Model, we need to use the effectiveness judgments in 2019 qrels and the stance judgments in 2021 qrels.
+Specifically, we use 2019 qrels for training and 2021 qrels for evaluation.
+However, those two qrels files do not contain the document content.
+So we need to retrieve those documents in the qrels from the ClueWeb12-B13 index and the C4 index respectively.
+Additionally, since the 2019 qrels training data is heavily imbalanced, we also need to sample an equal number of supportive (effective) and dissuasive (ineffective) document for training the Stance Detection Model.
+
+Execute the following command to retrieve documents judged in the 2019 qrels and the 2021 qrels respectively.
+
 
 ### Stage 1: Initial Retrieval
+
+Code for this stage is kept under `initial_retrieval/`.
 
 `bm25_search.py` uses [Pyserini](https://github.com/castorini/pyserini) to perform BM25 search.
 For the initial retrieval, we need to perform BM25 search using 2019 topics, 2021 topics, and WH topics respectively.
