@@ -27,6 +27,7 @@ Refer to the links below for how documents were judged by NIST.
 
 ## Environment
 We use Python 3.8.10 with the following main packages.
+Note that retrieving documents also requires Java environment.
 ```
 beautifulsoup4==4.9.3
 nltk==3.5
@@ -55,6 +56,19 @@ So we need to retrieve those documents in the qrels from the ClueWeb12-B13 index
 Additionally, since the 2019 qrels training data is heavily imbalanced, we also need to sample an equal number of supportive (effective) and dissuasive (ineffective) document for training the Stance Detection Model.
 
 Execute the following command to retrieve documents judged in the 2019 qrels and the 2021 qrels respectively.
+
+```bash
+python qrels_document_retrieval.py -q 2019qrels -i [path to the index of ClueWeb12-B13]
+python qrels_document_retrieval.py -q 2021qrels -i [path to the index of C4]
+```
+
+The output files are also provided at `data/2019qrels_docs.csv` and `data/2021qrels_docs.csv`.
+
+Execute the following command to sample a balanced subset of 2019 qrels.
+
+```bash
+python 2019qrels_sampler.py
+```
 
 
 ### Stage 1: Initial Retrieval
