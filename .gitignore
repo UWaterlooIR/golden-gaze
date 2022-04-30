@@ -6,3 +6,4 @@
 data/raw_data/
 *.sh
 initial_retrieval/output/
+evaluation/

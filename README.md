@@ -55,9 +55,9 @@ However, those two qrels files do not contain the document content.
 So we need to retrieve those documents in the qrels from the ClueWeb12-B13 index and the C4 index respectively.
 Additionally, since the 2019 qrels training data is heavily imbalanced, we also need to sample an equal number of supportive (effective) and dissuasive (ineffective) document for training the Stance Detection Model.
 
-Execute the following command to retrieve documents judged in the 2019 qrels and the 2021 qrels respectively.
+Execute the following commands to retrieve documents judged in the 2019 qrels and the 2021 qrels respectively.
 
-```bash
+```shell
 python qrels_document_retrieval.py -q 2019qrels -i [path to the index of ClueWeb12-B13]
 python qrels_document_retrieval.py -q 2021qrels -i [path to the index of C4]
 ```
@@ -66,15 +66,15 @@ The output files are also provided at `data/2019qrels_docs.csv` and `data/2021qr
 
 Execute the following command to sample a balanced subset of 2019 qrels.
 
-```bash
+```shell
 python 2019qrels_sampler.py
 ```
 
 The output file is provided at `data/2019qrels_docs_balanced.csv`.
 
-For the experiment of five-fold cross-validation of the 2019 data below, execute the following code to get the stratified random topic split.
+For the experiment of five-fold cross-validation of the 2019 data below, execute the following command to get the stratified random topic split.
 
-```bash
+```shell
 python 2019topics_random_split.py
 ```
 
@@ -95,10 +95,10 @@ For WH topics, we only need the top 100 documents for training the Trust Model.
 - -t, --topic_id, 1-51 for 2019 topics, 101-150 for 2021 topics, and 0-89 for WH topics. Specify the topic id for each run of this program to make jobs parallel.
 - -i, --index_path, path to the index of the web collection. You can index C4/ClueWeb12-B13 using [Anserini](https://github.com/castorini/anserini).
 
-Execute the following command to obtain the Initial Retrieval Results.
+Execute the following commands to obtain the Initial Retrieval Results.
 Make sure you have the index of C4 ready.
 
-```bash
+```shell
 python bm25_search.py -t [topic_id] -T 2019 -i [path to the index of C4]
 python bm25_search.py -t [topic_id] -T 2021 -i [path to the index of C4]
 python bm25_search.py -t [topic_id] -T WH -i [path to the index of C4]
@@ -111,9 +111,41 @@ We have the compressed output folder ready for you to use if you want to save ti
 
 Code for this stage is kept under `stance_detection/`.
 
-Our Stance Detection Model is based on [t5-large](https://huggingface.co/t5-large) finetuning on the stance judgments sampled from 2019 qrels.
+Our Stance Detection Model is finetuned on [t5-large](https://huggingface.co/t5-large).
 
+In our paper, we mention there are two experiment settings: **2019 cross-validation** and **2021 test**.
 
+#### 2019 cross-validation
+
+In this setting, we perform 5-fold cross-validation on sampled 2019 qrels.
+Judgments are grouped according to topics to create a zero-shot setting.
+Specifically, we finetune [t5-large](https://huggingface.co/t5-large) on the topics of four folds and test it on the topics of the remaining fold.
+Therefore, we will have five finetuned Stance Detection Models.
+Then we will use those five models each to predict stances of documents retrieved using the 2019 topics and WH topics.
+That's, there are five versions of predicted stances for each document.
+
+Execute the following commands to perform cross-validation and then use the finetuned Stance Detection Model to predict stances of documents retrieved using 2019 topics and WH topics. 
+
+```shell
+python main.py -c config_2019qrels_cv
+python main.py -c config_2019topics_cv_inference -t [topic_id: 101-150]
+python main.py -c config_WHtopcis_inference -t [topic_id: 0-89]
+```
+
+#### 2021 test
+
+In this setting, we finetune [t5-large](https://huggingface.co/t5-large) on the stance judgments sampled from 2019 qrels.
+
+Execute the following commands to finetune [t5-large](https://huggingface.co/t5-large) and then use the finetuned Stance Detection Model to predict stances of documents retrieved using 2021 topics and WH topics. 
+
+```shell
+python main.py -c config_2019qrels_train
+python main.py -c config_2021topcis_inference -t [topic_id: 101-150]
+python main.py -c config_WHtopcis_inference -t [topic_id: 0-89]
+```
+
+We have also uploaded the finetuned Stance Detection Model at https://github.com/UWaterlooIR/golden-gaze/releases/download/model/model.ckpt.
+You can download it and directly use it to do inference on other suitable data.
 
 ### Stage 3: Answer Prediction
 
@@ -125,7 +157,8 @@ Code for this stage is kept under `reranking/`.
 
 ### Stage 5: Evaluation
 
-Code for this stage is kept under `evaluation/`.
+Create a folder named `evaluation`.
+Clone this GitHub repository: https://github.com/trec-health-misinfo/Compatibility.
 
 
 ## Citation

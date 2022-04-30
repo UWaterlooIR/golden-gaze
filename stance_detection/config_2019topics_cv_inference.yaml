@@ -1,0 +1,39 @@
+# This config file is for predicting stances of documents retrieved using 2019 topics with 5-fold cross-validation.
+
+# Overall Configuration
+random_seed: 42
+mode: inference  # [training, inference]
+evaluation: pre_defined_topic_split        # [cross_validation, training_only] applicable when mode == training
+                                           # [go_through, pre_defined_topic_split] applicable when mode == inference
+
+# Dataset
+dataset_path: ../data/2019qrels_docs_balanced.csv
+inference_dataset_prefix: ../initial_retrieval/output/2019/
+inference_save_dir:  2019topics_cv_inference
+
+# Model
+tokenizer_name: t5-large
+pretrained_model_name: t5-large
+cache_dir: transformers_cache/
+
+# Text Preprocessing
+min_sentence_words: 4
+
+# Training: used when mode == training
+training_batch_size: 1
+learning_rate: 2.e-5
+max_input_sequence_length: 512
+max_output_sequence_length: 2
+num_workers: 4
+gpus: 1
+max_epochs: 20
+num_sanity_val_steps: 0
+log_every_n_steps: 1
+accumulate_grad_batches: 16
+
+# Validation: used when mode == training
+validation_batch_size: 8
+
+# Inference: used when mode == inference
+checkpoint_path: config_2019qrels_cv
+inference_batch_size: 8
