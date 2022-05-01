@@ -179,7 +179,20 @@ The output files are provided in `output`.
 ### Stage 5: Evaluation
 
 Create a folder named `evaluation`.
-Clone this GitHub repository: https://github.com/trec-health-misinfo/Compatibility.
+Clone this GitHub repository: https://github.com/trec-health-misinfo/Compatibility. 
+From https://trec.nist.gov/data/misinfo/misinfo-resources-2021.tar.gz, find `misinfo-qrels-graded.helpful-only` and `misinfo-qrels-graded.harmful-only` under `qrels/2021-derived-qrels/`.
+And put those two files into the compatibility folder.
+
+Execute the following commands to get compatibility scores of the three runs generated above.
+
+```shell
+python compatibility.py misinfo-qrels-graded.helpful-only  ../../reranking/output/BM25-Baseline
+python compatibility.py misinfo-qrels-graded.harmful-only  ../../reranking/output/BM25-Baseline
+python compatibility.py misinfo-qrels-graded.helpful-only  ../../reranking/output/Correct-Stance
+python compatibility.py misinfo-qrels-graded.harmful-only  ../../reranking/output/Correct-Stance
+python compatibility.py misinfo-qrels-graded.helpful-only  ../../reranking/output/Trust-Pipeline
+python compatibility.py misinfo-qrels-graded.harmful-only  ../../reranking/output/Trust-Pipeline
+```
 
 
 ## Citation
