@@ -144,12 +144,23 @@ python main.py -c config_2021topcis_inference -t [topic_id: 101-150]
 python main.py -c config_WHtopcis_inference -t [topic_id: 0-89]
 ```
 
+The output files are provided in `output`.
 We have also uploaded the finetuned Stance Detection Model at https://github.com/UWaterlooIR/golden-gaze/releases/download/model/model.ckpt.
 You can download it and directly use it to do inference on other suitable data.
 
 ### Stage 3: Answer Prediction
 
 Code for this stage is kept under `answer_prediction/`.
+Similar to the Stage 2, we also have two experiment settings: **2019 cross-validation** and **2021 test**.
+
+Execute the first command below to predict answers of 2019 topics using 5-fold cross-validation and the second command to predict answers of 2021 topics.
+
+```shell
+python trust_model.py -t 2019
+python trust_model.py -t 2021
+```
+
+The output files are provided in `output`.
 
 ### Stage 4: Reranking
 
