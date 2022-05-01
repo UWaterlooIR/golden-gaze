@@ -166,6 +166,16 @@ The output files are provided in `output`.
 
 Code for this stage is kept under `reranking/`.
 
+Execute the following commands to generate three runs reported in our paper.
+
+```shell
+python trust_model.py -t BM25-Baseline
+python trust_model.py -t Correct-Stance
+python trust_model.py -t Trust-Pipeline
+```
+
+The output files are provided in `output`.
+
 ### Stage 5: Evaluation
 
 Create a folder named `evaluation`.
