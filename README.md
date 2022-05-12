@@ -4,7 +4,7 @@ This is the code repository for the paper:
 Dake Zhang, Amir Vakili Tahami, Mustafa Abualsaud, and Mark D. Smucker. 
 "Learning Trustworthy Web Sources to Derive Correct Answers and Reduce Health Misinformation in Search." 
 In Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval. 2022.
-[[camera-ready version](http://hdl.handle.net/10012/18257)]
+[[camera-ready version](https://uwspace.uwaterloo.ca/bitstream/handle/10012/18257/SIGIR%202022%20Misinformation.pdf?sequence=1&isAllowed=y)]
 
 ## Data
 
