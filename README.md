@@ -199,10 +199,19 @@ python compatibility.py misinfo-qrels-graded.harmful-only  ../../reranking/outpu
 Please cite the following paper if you use our code.
 ```
 @inproceedings{zhang2022trustworthy,
-  title={Learning Trustworthy Web Sources to Derive Correct Answers and Reduce Health Misinformation in Search},
-  author={Zhang, Dake and Vakili Tahami, Amir and Abualsaud, Mustafa and Smucker, Mark D.},
-  booktitle={Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval},
-  year={2022}
+  author = {Zhang, Dake and Vakili Tahami, Amir and Abualsaud, Mustafa and Smucker, Mark D.},
+  title = {Learning Trustworthy Web Sources to Derive Correct Answers and Reduce Health Misinformation in Search},
+  year = {2022},
+  isbn = {9781450387323},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3477495.3531812},
+  doi = {10.1145/3477495.3531812},
+  booktitle = {Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval},
+  pages = {2099–2104},
+  numpages = {6},
+  location = {Madrid, Spain},
+  series = {SIGIR '22}
 }
 ```
 
